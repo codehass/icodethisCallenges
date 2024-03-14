@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	background: linear-gradient(90deg, #040c1e, #082e2f);
+	min-height: 100vh;
+}
+
+nav {
+	margin-top: 40px;
+	border-top: 4px solid #115b52;
+}
+
+.ul {
+	display: flex;
+	gap: 8%;
+	width: 75%;
+	margin: auto;
+}
+
+.ul li {
+	color: #195d58;
+	font-weight: bold;
+	font-size: 20;
+	box-shadow: 5px;
+	cursor: pointer;
+	padding-top: 30px;
+	position: relative;
+}
+
+.ul li:hover {
+	color: #fff;
+}
+
+.active::after,
+.ul li:hover::after {
+	color: #fff;
+	content: "";
+	background: #fffe75;
+	width: 100%;
+	height: 4px;
+	position: absolute;
+	top: -4;
+	left: 0;
+	transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.connect-card {
+	border: 3px solid #052f2f;
+	padding: 20px;
+	border-radius: 5px;
+	background: linear-gradient(90deg, #041e1ecb, #012324);
+	position: relative;
+}
+
+.connect-card {
+	color: white;
+}
+
+.connect-card::after {
+	content: "▼";
+	color: white;
+	position: absolute;
+	left: 80;
+	top: -30;
+}
+
+.card-element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #052f2f;
+	cursor: pointer;
+}
+
+.pintrest {
+	border-bottom: none;
+}
+
+.card-element i {
+	flex: 1;
+}
+
+.card-element p {
+	color: #d6e386;
+	font-size: 14px;
+	width: 75%;
+	border-left: 1px solid #052f2f;
+	padding: 20px;
+	font-weight: 500;
+}
+
+.card-element p span {
+	transition: transform 0.3s;
+	display: inline-block;
+}
+
+.card-element p span:hover {
+	transform: scale(1.1);
+	color: #fff;
+}
+
+.connect {
+	position: relative;
+}
+
+.dropdown {
+	position: absolute;
+	left: -40;
+	top: 80;
+}
+
+.show {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+.active {
+	color: white;
+}
+
+@media (max-width: 660px) {
+	.ul {
+		gap: 5%;
+		width: 90%;
+	}
+
+	.ul li {
+		font-size: 16;
+		box-shadow: 5px;
+	}
+}
+
+@media (max-width: 420px) {
+	nav {
+		margin-left: 20px;
+		margin-right: 0;
+		border-left: 4px solid #115b52;
+		border-top: none;
+		min-width: 360px;
+	}
+
+	.ul {
+		flex-direction: column;
+		margin-left: 17px;
+	}
+
+	.ul li {
+		cursor: pointer;
+		padding: 20px 0 20px 10px;
+		width: 110px;
+	}
+
+	.active::after,
+	.ul li:hover::after {
+		width: 4px;
+		height: 100%;
+		position: absolute;
+		left: -20;
+	}
+
+	.connect-card::after {
+		content: "▶";
+		left: -25;
+		top: 46%;
+	}
+
+	.dropdown {
+		top: 50%;
+		left: 110%;
+		transform: translate(5%, -50%);
+	}
+}

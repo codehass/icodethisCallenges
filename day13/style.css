@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(https://as2.ftcdn.net/v2/jpg/00/70/14/07/1000_F_70140703_2f8N0lwAp67VimEab9ogx3FjvguA8Ef1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main {
+	height: 75vh;
+	min-height: 550px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	gap: 20px;
+}
+
+.sign-in,
+.sign-up {
+	width: 50%;
+	height: 100%;
+	min-width: 340px;
+	max-width: 400px;
+	background-color: #111213;
+	opacity: 0.8;
+}
+
+.form-sign-in,
+.form-sign-up {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.btns {
+	width: 100%;
+	display: flex;
+}
+
+.btns button {
+	width: 50%;
+	height: 65px;
+	border: none;
+	cursor: pointer;
+	background-color: #2c2f35;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.active {
+	background-color: #fff;
+	color: #6acecc;
+}
+
+.btns button:hover {
+	background-color: #fff;
+	color: #6acecc;
+}
+
+.user-input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #539196;
+	margin-bottom: 30px;
+}
+
+.user-input input {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	padding: 10px;
+	color: #c7c9cc;
+}
+
+.user-input i {
+	color: gray;
+	font-size: 18px;
+}
+
+.user-input input::placeholder {
+	color: #c7c9cc;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.save-forget {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #c7c9cc;
+}
+
+.save-forget a {
+	color: #c7c9cc;
+}
+.save-forget:nth-child(1) {
+	display: flex;
+	gap: 5px;
+}
+
+.btn {
+	height: 60px;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	margin-top: 20px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.login-btn {
+	background: #fda944;
+	margin-bottom: 20px;
+}
+
+.fb-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background: #2d78bf;
+}
+
+.fb-btn:hover {
+	background: #5c9ad4;
+}
+
+.login-btn:hover {
+	background: #f5bc76;
+}
+
+.line {
+	height: 1px;
+	width: 40%;
+	background: #6acecc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px auto;
+}
+
+.line::after {
+	content: "or";
+	background-color: #2c2f35;
+	border-radius: 50%;
+	color: #fff;
+	padding: 5px;
+	background-color: #111213;
+	opacity: 0.8;
+}
+
+.show {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}

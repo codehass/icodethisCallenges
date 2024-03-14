@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.social-cont:after {
+	content: "";
+	position: absolute;
+	left: 2.5%;
+	top: 0;
+	width: 95%;
+	height: 5px;
+	background: #ffca54;
+}
+
+.social-ele {
+	position: relative;
+}

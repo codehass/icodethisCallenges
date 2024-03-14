@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-[#F2F2F8] flex justify-center items-center min-h-screen">
+		<div
+			class="form-cont md:w-2/3 min-w-[320px] max-w-[500px] relative flex flex-col justify-center items-center gap-6 bg-white rounded-bl-md p-4"
+		>
+			<div class="w-3/4 my-10">
+				<h1 class="font-bold text-xl py-2">Give feedback</h1>
+				<form action="">
+					<p class="text-lg pb-4">
+						Your thoughts are valuable in helping improve our products.
+					</p>
+
+					<textarea
+						name=""
+						id=""
+						cols="30"
+						rows="10"
+						placeholder="Let us know what's in your mind"
+					></textarea>
+					<div class="flex tems-start gap-2 py-3">
+						<input type="checkbox" name="privacy-policy" />
+						<label>
+							I may be contracted about this feedback. See our
+							<a class="underline">privacy policy.</a>
+						</label>
+					</div>
+					<div class="flex tems-start gap-2 pt-2">
+						<input type="checkbox" name="research-group" />
+						<label>
+							I'd like to help improve the products by joining the
+							<a class="underline">Research Group.</a>
+						</label>
+					</div>
+				</form>
+				<button class="mt-4 w-full bg-black py-2 rounded-sm text-white">
+					See feedback
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

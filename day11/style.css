@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+button {
+	cursor: pointer;
+	border-style: none;
+	overflow: auto;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fee4ea;
+}
+
+.card {
+	background: #ffff;
+	width: 500px;
+	height: 330px;
+	border-radius: 20px;
+	position: relative;
+	padding: 0 20px 20px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.dots {
+	position: absolute;
+	right: 15px;
+	top: 8px;
+	border: none;
+	background-color: white;
+	font-size: 22px;
+}
+
+.top-card {
+	display: flex;
+	width: 95%;
+	margin: auto;
+	justify-content: start;
+	align-items: center;
+	gap: 16px;
+}
+
+.logo {
+	background: rgb(238, 200, 200);
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: 1px solid gray;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.title p {
+	color: rgb(187, 187, 187);
+	font-size: 14px;
+	display: flex;
+	gap: 4px;
+}
+
+.top-btns {
+	padding-top: 10px;
+}
+
+.top-btns button {
+	padding: 6px 13px;
+	font-size: 14px;
+	border: 1px solid black;
+	background: #ffff;
+	border-radius: 5px;
+}
+
+.top-btns .apply {
+	background: #232e4d;
+	color: white;
+}
+
+.save:hover {
+	background: #232e4d;
+	color: white;
+}
+
+.content {
+	margin: auto;
+	background: #f8fafb;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 4%;
+	border: 1px solid rgb(224, 219, 219);
+	border-radius: 8px;
+}
+
+h5 {
+	color: #60607d;
+	padding-bottom: 4px;
+}
+
+.content p {
+	font-size: 14px;
+	padding-left: 2px;
+	padding-bottom: 8px;
+	font-weight: 400;
+}
+
+.connections {
+	width: 32%;
+	color: #60607d;
+}
+
+.btn-bottom {
+	text-align: center;
+}
+
+.btn-bottom button {
+	background: white;
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 480px) {
+	.card {
+		height: 100vh;
+		max-height: 550px;
+		min-width: 300px;
+	}
+
+	.top-card {
+		flex-direction: column;
+		text-align: center;
+		margin: auto;
+	}
+
+	.title,
+	.title p {
+		width: 78%;
+		margin: auto;
+	}
+
+	.content {
+		flex-direction: column;
+		width: 100%;
+		gap: 10px;
+	}
+
+	.content p {
+		font-size: 14px;
+	}
+
+	.connections {
+		width: 100%;
+	}
+}

@@ -1,0 +1,254 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="./scripts.js" defer></script>
+	</head>
+	<body class="bg-[#F2F8FF]">
+		<div class="w-11/12 m-auto mt-[5%] max-w-[960px]">
+			<div class="relative flex justify-between items-center gap-4">
+				<div
+					class="flex-1 flex items-center justify-start bg-white gap-1 border p-1 py-2 rounded-md text-sm text-gray-400"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-search"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+						<path d="M21 21l-6 -6" />
+					</svg>
+					<input
+						type="text"
+						class="p-1 w-11/12"
+						value="search for apps"
+						onfocus="clearInput(this)"
+					/>
+				</div>
+				<div class="flex flex-col">
+					<button
+						id="sort-button"
+						class="w-full flex items-center text-sm text-white py-3 p-2 rounded-md gap-1 bg-[#180B3D]"
+					>
+						<span>Sort</span>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-chevron-down"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M6 9l6 6l6 -6" />
+						</svg>
+					</button>
+					<ul
+						id="sort-list"
+						class="z-10 hidden top-14 absolute px-2 rounded-md flex-col justify-center items-center py-4 bg-white shadow-lg"
+					>
+						<li
+							class="w-full p-3 cursor-pointer hover:bg-[#F2F7FF] rounded-sm text-xl"
+						>
+							Top rated
+						</li>
+						<li
+							class="w-full p-3 cursor-pointer hover:bg-[#F2F7FF] rounded-sm text-xl"
+						>
+							Top trending
+						</li>
+						<li
+							class="w-full p-3 cursor-pointer hover:bg-[#F2F7FF] rounded-sm text-xl"
+						>
+							Top selling
+						</li>
+						<li
+							class="w-full p-3 cursor-pointer hover:bg-[#F2F7FF] rounded-sm text-xl"
+						>
+							Newest
+						</li>
+					</ul>
+				</div>
+				<div class="flex items-center text-[#282C3B] font-medium gap-1">
+					<input type="checkbox" id="myCheckbox" />
+					<label class="custom-checkbox" for="myCheckbox"></label>
+					<p>Free for all teams</p>
+				</div>
+				<div class="flex items-center text-[#282C3B] font-medium gap-1">
+					<p>More Filters</p>
+					<button>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-chevron-down"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M6 9l6 6l6 -6" />
+						</svg>
+					</button>
+				</div>
+				<div class="flex items-center text-[#282C3B] font-medium gap-1">
+					<p>Categories</p>
+					<button>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-chevron-down"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M6 9l6 6l6 -6" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div
+				class="bg-white p-5 shadow-lg w-[400px] h-[400px] rounded-xl mt-10 absolute bottom-10 right-10 flex flex-col gap-5"
+			>
+				<div class="bg-gray-400 rounded-lg w-14 h-14"></div>
+
+				<h2 class="font-medium text-lg">Intranet Suit</h2>
+				<p class="w-3/4 font-semibold text-[15px]">
+					Your fully personalized center collaboration hub that connects
+					teams,loations, tools and people
+				</p>
+				<div class="font-semibold text-sm flex gap-1 w-full">
+					<span class="bg-[#F2F7FF] px-2 py-1 rounded-full">mobile</span>
+					<span class="bg-[#F2F7FF] px-2 py-1 rounded-full"
+						>project management</span
+					>
+					<span class="bg-[#F2F7FF] px-2 py-1 rounded-full"
+						>themes & styles</span
+					>
+				</div>
+				<div class="flex flex-col gap-3 pt-3">
+					<div class="flex gap-1">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="text-[#F7C443] icon icon-tabler icon-tabler-star-filled"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+								stroke-width="0"
+								fill="currentColor"
+							/>
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="text-[#F7C443] icon icon-tabler icon-tabler-star-filled"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+								stroke-width="0"
+								fill="currentColor"
+							/>
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="text-[#F7C443] icon icon-tabler icon-tabler-star-filled"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+								stroke-width="0"
+								fill="currentColor"
+							/>
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="text-[#F7C443] icon icon-tabler icon-tabler-star-filled"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+								stroke-width="0"
+								fill="currentColor"
+							/>
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="text-[#F7C443] icon icon-tabler icon-tabler-star-filled"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
+								stroke-width="0"
+								fill="currentColor"
+							/>
+						</svg>
+					</div>
+					<p class="underline font-semibold">45 reviews</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

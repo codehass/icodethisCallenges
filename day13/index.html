@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://kit.fontawesome.com/5da2948a10.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div class="sign-in" id="sign-in">
+					<div class="btns">
+						<button id="signIn-btn" class="active">Sign In</button>
+						<button id="signUp-btn" class="">Sign Up</button>
+					</div>
+					<form id="form-sign-in" class="form-sign-in show">
+						<div class="user-input">
+							<input
+								type="text"
+								name="username"
+								id="username"
+								placeholder="Username"
+							/>
+							<i class="fa-regular fa-user"></i>
+						</div>
+						<div class="user-input">
+							<input
+								type="text"
+								name="username"
+								id="username"
+								placeholder="Password"
+							/>
+							<i class="fa-solid fa-lock"></i>
+						</div>
+						<div class="save-forget">
+							<div>
+								<input type="checkbox" name="me" id="me" />
+								<label for="forget">Remember me</label>
+							</div>
+							<a href="#">Forget password</a>
+						</div>
+						<button type="submit" class="btn login-btn">LOGIN IN</button>
+						<div class="line"></div>
+						<button class="btn fb-btn">
+							<i class="fa-brands fa-facebook-f"></i>
+							Log In with Facebook
+						</button>
+					</form>
+
+					<!-- Form signU -->
+					<form id="form-sign-up" class="form-sign-up hidden">
+						<div class="user-input">
+							<input
+								type="text"
+								name="username"
+								id="username"
+								placeholder="Name"
+							/>
+							<i class="fa-regular fa-user"></i>
+						</div>
+						<div class="user-input">
+							<input type="text" name="email" id="email" placeholder="Email" />
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="user-input">
+							<input
+								type="text"
+								name="username"
+								id="username"
+								placeholder="Password"
+							/>
+							<i class="fa-solid fa-lock"></i>
+						</div>
+						<div class="save-forget">
+							<div>
+								<input type="checkbox" name="me" id="me" />
+								<label for="forget">Meal</label>
+							</div>
+							<div>
+								<input type="checkbox" name="me" id="me" />
+								<label for="forget">Female</label>
+							</div>
+						</div>
+						<button type="submit" class="btn login-btn">LOGIN IN</button>
+						<div class="line"></div>
+						<button class="btn fb-btn">
+							<i class="fa-brands fa-facebook-f"></i>
+							Log In with Facebook
+						</button>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

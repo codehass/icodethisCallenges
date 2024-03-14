@@ -1,0 +1,16 @@
+/* #one {
+	color: red;
+} */
+
+#svgOne,
+#svgTow,
+#svgThree,
+#svgFour,
+#svgFive,
+#svgSix,
+#svgSeven,
+#svgEight {
+	display: none;
+	color: green;
+	font-weight: 500;
+}
