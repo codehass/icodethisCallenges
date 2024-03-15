@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script
+			src="https://kit.fontawesome.com/5da2948a10.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body class="bg-[#EEF0F8] flex justify-center items-center h-screen">
+		<div
+			class="flex flex-col md:flex-row justify-center items-center gap-7 w-[80vw] m-auto"
+		>
+			<form action="" class="bg-white rounded-md shadow-md w-[260px]">
+				<div class="flex justify-between items-center p-3 border-b">
+					<p class="font-semibold">Filters</p>
+					<button
+						type="submit"
+						class="bg-[#7A90FD] hover:bg-[#91a2f5] text-white px-3 py-1 rounded-sm"
+					>
+						Done
+					</button>
+				</div>
+				<div class="flex items-center gap-3 p-4">
+					<input type="checkbox" name="date" id="date" />
+					<label for="date">Date</label>
+				</div>
+				<div class="flex gap-3 items-center p-4">
+					<input type="checkbox" name="amount" id="amount" />
+					<label for="date">Amount</label>
+				</div>
+				<div class="flex gap-3 items-center p-4">
+					<input type="checkbox" name="status" id="status" />
+					<label for="date">Status</label>
+				</div>
+				<div class="flex gap-3 items-center p-4">
+					<input type="checkbox" name="payment_method" id="payment_method" />
+					<label for="date">Payment method</label>
+				</div>
+			</form>
+
+			<div class="flex flex-col gap-5 w-[260px]">
+				<div class="flex justify-between items-center">
+					<button
+						class="bg-[#ECEFF8] rounded-md shadow-lg shadow-white py-3 px-5"
+					>
+						+ Add new
+					</button>
+					<button class="bg-[#ECEFF8] rounded-md shadow-md py-3 px-5">
+						+ Export
+					</button>
+				</div>
+				<div class="bg-[#DCDFEC] rounded-lg shadow-2xl shadow-white">
+					<div
+						class="bg-[#F2F4FC] rounded-md text-center py-4 w-4/5 h-4/5 m-auto my-4"
+					>
+						<i class="fa-solid fa-award text-4xl"></i>
+						<p class="py-2 text-sm">You don't have any certificates.</p>
+						<button
+							class="rounded-2xl w-4/5 py-2 bg-[#7A90FD] hover:bg-[#91a2f5] text-white"
+						>
+							Learn more
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
