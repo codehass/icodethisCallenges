@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script
+			src="https://kit.fontawesome.com/5da2948a10.js"
+			crossorigin="anonymous"
+		></script>
+		<style>
+			.image-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.image-container .images {
+				display: flex;
+				transition: transform 0.5s ease;
+			}
+
+			.image-container img {
+				width: 33%;
+				height: auto;
+			}
+
+			.control-btn {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background-color: rgba(255, 255, 255, 0.5);
+				border: none;
+				cursor: pointer;
+				padding: 5px;
+				z-index: 1;
+			}
+
+			#back {
+				left: 10px;
+			}
+
+			#next {
+				right: 10px;
+			}
+		</style>
+	</head>
+	<body class="bg-[#B2E5FD] flex justify-center items-center h-screen">
+		<div class="w-[80%] h-40 bg-white">
+			<div class="mt-4 w-11/12 mx-auto flex justify-between text-sm">
+				<p class="text-[#829195]">RECENTLY UPLOADED PHOTOS</p>
+				<button class="outline-none text-[#62C4E7]">View all</button>
+			</div>
+			<div class="image-container">
+				<button id="back" class="control-btn">
+					<i class="fa-solid fa-chevron-left"></i>
+				</button>
+				<div class="images">
+					<img
+						id="img-1"
+						src="https://inews.gtimg.com/newsapp_bt/0/14679116824/1000"
+						alt="Image 1"
+					/>
+					<img
+						id="img-2"
+						src="https://inews.gtimg.com/newsapp_bt/0/5927542723/1000"
+						alt="Image 2"
+					/>
+					<img
+						id="img-3"
+						src="https://inews.gtimg.com/newsapp_bt/0/5927542723/1000"
+						alt="Image 3"
+					/>
+					<img
+						id="img-4"
+						src="https://inews.gtimg.com/newsapp_bt/0/5927542723/1000"
+						alt="Image 1"
+					/>
+					<img
+						id="img-5"
+						src="https://inews.gtimg.com/newsapp_bt/0/5927542723/1000"
+						alt="Image 2"
+					/>
+					<img
+						id="img-6"
+						src="https://inews.gtimg.com/newsapp_bt/0/5927542723/1000"
+						alt="Image 3"
+					/>
+					<!-- Add more images here -->
+				</div>
+				<button id="next" class="control-btn">
+					<i class="fa-solid fa-chevron-right"></i>
+				</button>
+			</div>
+		</div>
+
+		<script>
+			const prevBtn = document.getElementById("back");
+			const nextBtn = document.getElementById("next");
+			const imagesContainer = document.querySelector(".images");
+
+			let currentIndex = 0;
+			const totalImages = imagesContainer.children.length;
+
+			function goToSlide(index) {
+				if (index < 0 || index >= totalImages) return;
+				currentIndex = index;
+				const offset = -currentIndex * 33.33333;
+				imagesContainer.style.transform = `translateX(${offset}%)`;
+				if (currentIndex === 0) {
+					imagesContainer.children[0].style.display = "block";
+				} else {
+					imagesContainer.children[0].style.display = "none";
+				}
+			}
+
+			prevBtn.addEventListener("click", () => {
+				currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+				goToSlide(currentIndex);
+			});
+
+			nextBtn.addEventListener("click", () => {
+				currentIndex = (currentIndex + 1) % totalImages;
+				goToSlide(currentIndex);
+			});
+		</script>
+	</body>
+</html>
