@@ -1,0 +1,11 @@
+.played-song::before {
+	content: "";
+	position: absolute;
+	display: flex;
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	left: -10px;
+	background: #06baa5;
+	position: absolute;
+}

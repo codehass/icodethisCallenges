@@ -7,26 +7,25 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/5da2948a10.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css" />
-
   <title>Music Player</title>
-
 </head>
 
 <body class="bg-[#F6F6F6] flex justify-center items-center h-screen">
-  <div class="bg-white w-72 h-96 shadow-sm">
-    <div class="flex justify-between items-center w-4/5 m-auto py-4">
-      <i class="fa-solid fa-bars hover:cursor-pointer"></i>
-      <i class="fa-regular fa-square-plus hover:cursor-pointer"></i>
+  <div class="bg-white w-72 shadow-sm">
+    <div class="flex justify-between w-4/5 m-auto py-4">
+      <i class="fa-solid fa-bars hover:cursor-pointer text-xl"></i>
+      <div class="text-center pt-3">
+        <p class="text-gray-400 uppercase font-light">plying now</p>
+        <h2 class="font-bold text-lg text-gray-600">Someone Lived This</h2>
+        <p class="text-gray-400">-Hans Zimmer-</p>
+      </div>
+      <i class="fa-regular fa-square-plus hover:cursor-pointer text-xl"></i>
     </div>
 
-    <div class="text-center">
-      <p class="text-gray-400 uppercase font-light">plying now</p>
-      <h2 class="font-bold text-lg text-gray-600">Someone Lived This</h2>
-      <p class="text-gray-400">-Hans Zimmer-</p>
-    </div>
-
-    <div class="w-11/12 m-auto flex flex-col justify-center items-center pt-4">
-      <div class="bg-green-400 w-28 h-28 shadow-lg shadow-gray-400"></div>
+    <div class="px-3 w-11/12 m-auto flex flex-col justify-center items-center pt-4">
+      <div class="bg-green-400 w-36 h-36 shadow-lg shadow-gray-400">
+        <img src="https://m.media-amazon.com/images/I/91GExOcI5AL._SL1500_.jpg" alt="">
+      </div>
       <div class="w-full pt-4">
         <div class="bg-gray-200 w-full h-1 relative rounded-full">
           <span class="bg-[#06BAA5] w-3/4 h-1 absolute rounded-full"></span>
@@ -35,39 +34,40 @@
           <span>3:47</span>
           <span>5:35</span>
         </div>
-        <div class="flex justify-around text-gray-400 font-bold">
+        <div class="flex justify-around items-center text-gray-400 font-bold">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-back">
+            class="hover:cursor-pointer p icon icon-tabler icons-tabler-outline icon-tabler-arrow-back">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
           </svg>
 
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-player-skip-back">
+            class="hover:cursor-pointer p icon icon-tabler icons-tabler-outline icon-tabler-player-skip-back">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M20 5v14l-12 -7z" />
             <path d="M4 5l0 14" />
           </svg>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-player-play">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M7 4v16l13 -8z" />
-          </svg>
+          <div class="hover:cursor-pointer border p-2 border-gray-400 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-player-play">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 4v16l13 -8z" />
+            </svg>
+          </div>
 
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-player-skip-forward">
+            class="hover:cursor-pointer p icon icon-tabler icons-tabler-outline icon-tabler-player-skip-forward">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M4 5v14l12 -7z" />
             <path d="M20 5l0 14" />
           </svg>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-arrows-shuffle">
+            class="hover:cursor-pointer p icon icon-tabler icons-tabler-outline icon-tabler-arrows-shuffle">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M18 4l3 3l-3 3" />
             <path d="M18 20l3 -3l-3 -3" />
@@ -77,6 +77,21 @@
         </div>
       </div>
     </div>
+
+    <ul class="px-3 w-11/12 m-auto py-4 text-[#C0C2C4]">
+      <li class="flex justify-between items-center pb-3 hover:cursor-pointer">
+        <p>Sapper's Tree</p> <span>3:37</span>
+      </li>
+      <li class="played-song relative flex justify-between items-center pb-3 hover:cursor-pointer font-bold text-black">
+        <p>Someone Lived This</p> <span>5:35</span>
+      </li>
+      <li class="flex justify-between items-center pb-3 hover:cursor-pointer">
+        <p>Summer Wind</p> <span>2:54</span>
+      </li>
+      <li class="flex justify-between items-center pb-3 hover:cursor-pointer">
+        <p>Orphanage</p> <span>1:13</span>
+      </li>
+    </ul>
   </div>
 
 </body>
